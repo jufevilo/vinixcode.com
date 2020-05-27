@@ -10,14 +10,19 @@
   src: url("fonts/CoolveticaLt-Regular.otf");
 }
 
+@font-face {
+  font-family: "Averta";
+  src: url("fonts/Averta-Bold.ttf");
+}
+
 /* Body */
 
 .principal_navbar {
   font-family: "coolvetica-light";
 }
 
-.body {
-  background-color: gray;
+html,
+body {
   height: 100%;
 }
 
@@ -31,49 +36,131 @@
   }
 }
 
+/* Menú Principal */
+
+.menu-principal {
+  background-color: white;
+  height: 100%;
+  width: 85%;
+  float: right;
+  box-shadow: #2d2d2d 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu-principal a {
+  color: #2d2d2d;
+  text-decoration: none !important;
+}
+.menu-principal a:hover {
+  color: rgb(255, 196, 0);
+}
+
+.group-menu {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.texto-menu {
+  font-family: "Averta";
+  font-size: 100px;
+}
+
+.group-icons {
+  display: flex;
+}
+
+.icons-menu {
+  width: 30px;
+  height: 30px;
+}
+
+.gruop-direction {
+  display: flex;
+  flex-flow: column;
+}
+
+.direction {
+  width: 100%;
+  font-family: "coolvetica-light";
+}
+
+.sas {
+  font-family: "Averta";
+}
+
 /* Sección 1 */
 
 .seccion_1 {
-  background-color: black;
-  height: 1080px;
+  background: rgb(75, 75, 75);
+  background: radial-gradient(
+    circle,
+    rgba(75, 75, 75, 1) 0%,
+    rgba(45, 45, 45, 1) 100%
+  );
+  height: 100%;
+  width: 100%;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.logo-principal {
+  width: 150px;
+  height: auto;
+  margin-left: 50px;
+}
+
+.menu-fijo {
+  width: 30px;
+  height: auto;
+  margin-right: 50px;
+  margin-left: 60px;
 }
 
 .imagen_inicial {
-  padding-top: 50px;
-  padding-bottom: 80px;
   width: 800px;
+  height: auto;
+  margin: 30px;
 }
 
 /* Sección 2 */
 
 .seccion_2 {
-  background-color: #2d2d2d;
-  height: auto;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.imgservice {
-  padding-top: 100px !important;
-  padding-bottom: 100px !important;
-  padding-left: 300px;
+.img-service {
+  width: 400px;
+  height: 500px;
+  margin: 80px;
 }
 
 .title-services {
-  color: white;
-  font-family: "coolvetica";
-  padding-left: 100px;
+  color: #f4d178;
+  font-family: "Averta";
   font-size: 80px;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .text-services {
   color: white;
   font-family: "Open Sans", sans-serif;
-  padding-left: 100px;
-  padding-right: 180px;
   font-size: 20px;
+  width: 400px;
+  margin-right: 80px;
+}
+
+.video-services {
+  width: 40%;
 }
 
 /* Sección 3 */
@@ -140,6 +227,12 @@
 
 /* About */
 
+.title_vmc {
+  color: #f4d178;
+  font-family: "Averta";
+  font-size: 80px;
+}
+
 /* Seccion 1 */
 
 .seccion_1_about {
@@ -149,27 +242,15 @@
     rgba(145, 0, 0, 1) 0%,
     rgba(145, 0, 0, 1) 100%
   );
-  height: auto;
-}
-
-.title_vinixcode {
-  color: #f4d178;
-  font-family: "coolvetica";
-  font-size: 80px;
-  padding-top: 100px;
-}
-
-.title_vmc {
-  color: #f4d178;
-  font-family: "coolvetica";
-  font-size: 80px;
-  padding-top: 60px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .text_vinixcode {
   color: white;
   font-family: "Open Sans", sans-serif;
-  padding-bottom: 100px;
   width: 600px;
 }
 
@@ -177,26 +258,11 @@
 
 .seccion_2_about {
   background-color: #2d2d2d;
-  height: auto;
-}
-
-.title_mission {
-  color: #f4d178;
-  font-family: "coolvetica";
-  font-size: 80px;
-  padding-top: 100px;
-}
-
-.title_vision {
-  color: #f4d178;
-  font-family: "coolvetica";
-  font-size: 80px;
-}
-
-.title_corporatevalues {
-  color: #f4d178;
-  font-family: "coolvetica";
-  font-size: 80px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
 }
 
 .text_mission {
@@ -227,25 +293,41 @@
 
 /* Seccion 3 */
 
-.seccion_3 {
+.seccion_3_about {
   background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .title_aboutus {
   color: #2d2d2d;
-  font-family: "coolvetica";
+  font-family: "Averta";
   font-size: 80px;
-  padding-top: 100px;
 }
 
 .text_aboutus {
   color: #2d2d2d;
   font-family: "Open Sans", sans-serif;
   width: 600px;
-  margin-bottom: 100px;
 }
 
 /* Team */
+
+.img-profile {
+  width: 200px;
+}
+
+.names-profiles {
+  font-family: "Averta";
+  color: #f4d178;
+}
+
+.position {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
 
 .seccion_1_team {
   background: rgb(75, 75, 75);
@@ -254,82 +336,80 @@
     rgba(75, 75, 75, 1) 0%,
     rgba(45, 45, 45, 1) 100%
   );
-  height: auto;
-}
-
-.flex-container {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.flex-container > img {
-  background-color: #f1f1f1;
-  width: 100px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-
-.names {
-  color: #f4d178;
-  font-family: "coolvetica-light";
-}
-
-.description {
-  color: white;
-  font-family: "coolvetica-light";
+.profile {
+  align-self: flex-start;
+  margin-top: 350px;
 }
 
 /* Perfiles */
 
-.images-profile {
-  margin-top: 40px;
-}
-
-.names_information {
-  font-size: 50px;
-  font-family: "coolvetica";
+.names {
   color: #f4d178;
+  font-family: "Averta";
+  font-size: 50px;
 }
 
-.position {
-  font-family: "Coolvetica";
-}
-
-.description-team {
+.description-profile {
+  color: white;
   font-family: "Open Sans", sans-serif;
-  padding-left: 200px;
-  padding-right: 200px;
-  margin-bottom: 0px;
+  width: 700px;
 }
 
-/* Juan García */
-
-.seccion_juangarcia {
+.group-profile {
   background: rgb(75, 75, 75);
   background: radial-gradient(
     circle,
     rgba(75, 75, 75, 1) 0%,
     rgba(45, 45, 45, 1) 100%
   );
-  height: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Juan García */
+
+.seccion_members {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
 }
 
 /* contact */
 
-.seccion_contact {
-  background: rgb(241, 208, 0);
+.page-contact {
+  background: rgb(255, 206, 45);
   background: radial-gradient(
     circle,
-    rgba(241, 208, 0, 1) 0%,
-    rgba(255, 196, 0, 1) 100%
+    rgb(255, 206, 45) 0%,
+    rgb(255, 196, 0) 100%
   );
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seccion_contact {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
 }
 
 .title-contact {
   color: white;
-  font-family: "coolvetica";
+  font-family: "Averta";
   font-size: 80px;
 }
 
@@ -337,36 +417,5 @@
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-.form_contact {
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-.btn-submit {
-  border-radius: 10px;
-  color: white;
-  border-color: white;
-  background: rgb(241, 208, 0);
-  background: radial-gradient(
-    circle,
-    rgba(241, 208, 0, 1) 0%,
-    rgba(255, 196, 0, 1) 100%
-  );
-}
-
-.form-control {
-  background-color: transparent;
-  border-color: white;
-}
-
-.form-control::placeholder {
-  color: white;
-}
-
-a {
-  text-decoration: none;
+  width: 500px;
 }
