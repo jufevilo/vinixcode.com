@@ -304,7 +304,7 @@ body {
 /* Team */
 
 .img-profile {
-  width: 200px;
+  width: 280px;
   margin: 10px;
 }
 
@@ -321,12 +321,7 @@ body {
 }
 
 .seccion_1_team {
-  background: rgb(75, 75, 75);
-  background: radial-gradient(
-    circle,
-    rgba(75, 75, 75, 1) 0%,
-    rgba(45, 45, 45, 1) 100%
-  );
+  background-color: black;
   height: 100%;
   width: 100%;
   display: flex;
@@ -336,10 +331,22 @@ body {
 
 .profile {
   align-self: flex-start;
-  margin-top: 350px;
+  margin-top: 250px;
 }
 
 /* Perfiles */
+
+.text-profiles {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.image-profile {
+  width: 600px;
+  display: flex;
+  align-items: flex-end;
+}
 
 .names {
   color: #f4d178;
@@ -371,9 +378,7 @@ body {
 
 .seccion_members {
   display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
+  align-items: flex-end;
 }
 
 /* contact */
