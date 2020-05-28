@@ -36,6 +36,19 @@ body {
   }
 }
 
+.logo-principal {
+  width: 150px;
+  height: auto;
+  margin-left: 50px;
+}
+
+.menu-fijo {
+  width: 30px;
+  height: auto;
+  margin-right: 50px;
+  margin-left: 60px;
+}
+
 /* Menú Principal */
 
 .menu-principal {
@@ -76,6 +89,7 @@ body {
 .icons-menu {
   width: 30px;
   height: 30px;
+  display: flex;
 }
 
 .gruop-direction {
@@ -106,19 +120,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo-principal {
-  width: 150px;
-  height: auto;
-  margin-left: 50px;
-}
-
-.menu-fijo {
-  width: 30px;
-  height: auto;
-  margin-right: 50px;
-  margin-left: 60px;
 }
 
 .imagen_inicial {
@@ -155,74 +156,41 @@ body {
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  width: 400px;
-  margin-right: 80px;
+  width: 340px;
+  margin-right: 150px;
 }
 
 .video-services {
-  width: 40%;
+  width: 600px;
 }
 
 /* Sección 3 */
 
 .seccion_3 {
   background-color: white;
-  height: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .title-ourwork {
   color: #2d2d2d;
-  font-family: "coolvetica";
-  padding-left: 220px;
+  font-family: "Averta";
   font-size: 80px;
-  padding-top: 120px;
-  padding-bottom: 60px;
 }
 
 .text-ourwork {
   color: #2d2d2d;
   font-family: "Open Sans", sans-serif;
-  padding-left: 220px;
-  padding-bottom: 100px;
   font-size: 20px;
+  width: 400px;
+  margin-right: 100px;
 }
 
 .carrusel {
-  width: 70%;
-  margin-left: 60px;
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: black !important;
-}
-
-.flecha {
-  background-color: #2d2d2d;
-}
-
-/* Sección 4 */
-
-.seccion_4 {
-  background-color: #2d2d2d;
-  height: auto;
-  align-items: center;
-}
-
-.imgseccion4 {
-  text-align: center;
-  padding-top: 150px;
-  width: 200px;
-}
-
-.text-seccion4 {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  margin-bottom: 100px;
+  width: 700px;
 }
 
 /* About */
@@ -256,39 +224,36 @@ body {
 
 /* Seccion 2 */
 
+.video_mision {
+  width: 600px;
+}
+
 .seccion_2_about {
-  background-color: #2d2d2d;
+  background-color: black;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-flow: column;
   justify-content: space-evenly;
-}
-
-.text_mission {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  text-justify: auto;
-  padding-bottom: 50px;
-}
-
-.text_vision {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  text-justify: auto;
-  padding-bottom: 50px;
-}
-.text_corporatevalues {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  text-justify: auto;
-  padding-bottom: 50px;
+  align-items: center;
 }
 
 .text_vmc {
   color: white;
   font-family: "Open Sans", sans-serif;
   width: 600px;
+}
+
+.text_mivico {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  width: 500px;
+}
+
+.title_mivico {
+  color: #f4d178;
+  font-family: "Averta";
+  font-size: 60px;
+  margin-top: 50px;
 }
 
 /* Seccion 3 */
@@ -299,6 +264,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .title_aboutus {
@@ -313,6 +279,11 @@ body {
   width: 600px;
 }
 
+.videos-banderas {
+  display: flex;
+  flex-flow: column;
+}
+
 /* Team */
 
 .img-profile {
@@ -322,11 +293,13 @@ body {
 .names-profiles {
   font-family: "Averta";
   color: #f4d178;
+  margin-top: 15px;
 }
 
 .position {
   color: white;
   font-family: "Open Sans", sans-serif;
+  font-size: 23px;
 }
 
 .seccion_1_team {
@@ -387,6 +360,36 @@ body {
 
 /* contact */
 
+.formulario {
+  width: 500px;
+}
+
+.formulario input {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+}
+
+.formulario textarea {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+}
+
+.formulario button {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  color: white;
+}
+
+.formulario ::placeholder {
+  color: white;
+}
+
 .page-contact {
   background: rgb(255, 206, 45);
   background: radial-gradient(
@@ -418,4 +421,29 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   width: 500px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgb(182, 139, 0) 0px 0px 2px 1px;
+}
+
+.texto-menu-footer {
+  font-family: "Averta";
+  font-size: 40px;
+  line-height: 30px;
+  color: #2d2d2d;
+}
+.footer a {
+  text-decoration: none !important;
+}
+
+.texto-menu-footer:hover {
+  color: rgb(255, 196, 0);
 }
