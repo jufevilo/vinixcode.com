@@ -128,7 +128,7 @@ body {
   margin: 30px;
 }
 
-.logo-vinix{
+.logo-vinix {
   position: fixed;
   top: 48.5vh;
   left: -1.3vw;
@@ -137,7 +137,7 @@ body {
   z-index: 100;
 }
 
-.menu-vinix{
+.menu-vinix {
   width: 40px;
   height: 18px;
   position: fixed;
@@ -305,6 +305,7 @@ body {
 
 .img-profile {
   width: 200px;
+  margin: 10px;
 }
 
 .names-profiles {
@@ -329,7 +330,7 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
