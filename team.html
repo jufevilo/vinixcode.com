@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <div class="menu-principal">
+    <div class="menu-principal collapse navbar-collapse" id="nav-menu-slide">
       <div class="pr-5 group-menu">
         <a href="/about.html">
           <h2 class="texto-menu">About</h2>
@@ -138,14 +138,21 @@
         </h3>
       </div>
       <div class="menu-vinix">
-        <a href="">
+        <a
+          href=""
+          data-toggle="collapse"
+          data-target="#nav-menu-slide"
+          aria-controls="nav-menu-slide"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <img class="menu-fijo" src="/components/menublanco.svg" alt="" />
         </a>
       </div>
     </div>
     <footer>
       <div class="footer border-top-3">
-        <a href="">
+        <a href="/index.html">
           <img src="/components/logo-negro.png" alt="" />
         </a>
         <div class="menu-footer">
