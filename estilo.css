@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: "coolvetica-light";
+  font-family: "Open Sans", sans-serif;
   src: url("fonts/CoolveticaLt-Regular.otf");
 }
 
@@ -18,7 +18,7 @@
 /* Body */
 
 .principal_navbar {
-  font-family: "coolvetica-light";
+  font-family: "Open Sans", sans-serif;
 }
 
 html,
@@ -80,6 +80,10 @@ body {
   margin-left: 60px;
 }
 
+h2 {
+  font-family: "Averta";
+}
+
 /* Menú Principal */
 
 @media (min-width: 1199.98px) {
@@ -93,12 +97,7 @@ body {
   }
 }
 .navbar-responsive {
-  background: rgb(145, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(145, 0, 0, 1) 0%,
-    rgba(145, 0, 0, 1) 100%
-  );
+  background-color: black;
 }
 
 .x-menu {
@@ -183,7 +182,7 @@ body {
 
 .direction {
   width: 100%;
-  font-family: "coolvetica-light";
+  font-family: "Open Sans", sans-serif;
 }
 
 .sas {
@@ -224,39 +223,35 @@ body {
 
 /* Sección 1 */
 
-.seccion_1 {
-  background: rgb(145, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(145, 0, 0, 1) 0%,
-    rgba(145, 0, 0, 1) 100%
-  );
-  height: auto;
+.principal-index {
+  background-color: black;
+  position: relative;
   width: 100%;
+  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-flow: wrap;
+  align-items: center;
+  overflow: hidden;
 }
 
-@media (max-width: 1199.98px) {
-  .seccion_1 {
-    width: 100% !important;
+@media (max-width: 992px) {
+  .principal-index {
     height: auto !important;
   }
 }
 
-@media (min-width: 1199.98px) {
-  .seccion_1 {
-    width: 100% !important;
-    height: 100% !important;
-  }
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .imagen_inicial {
   width: 400px;
   height: auto;
   margin: 30px;
+  z-index: 2 !important;
 }
 
 @media (min-width: 991.98px) {
@@ -433,16 +428,68 @@ body {
     rgba(145, 0, 0, 1) 0%,
     rgba(145, 0, 0, 1) 100%
   );
-  height: 100%;
+  height: auto;
   width: 100%;
-  display: flex;
-  align-items: center;
+  padding-bottom: 60px;
+}
+
+.title-vinixcode-about {
+  padding-top: 70px;
 }
 
 .text_vinixcode {
   color: white;
   font-family: "Open Sans", sans-serif;
   width: 95%;
+}
+
+@media (min-width: 1200px) {
+  .text_vinixcode {
+    width: 800px;
+  }
+}
+
+.we-are-experts {
+  color: white;
+  font-family: "Averta";
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.we-are-experts-title {
+  color: white;
+  font-size: 60px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.about-icons {
+  width: 70px;
+}
+
+@media (max-width: 576px) {
+  .about-icons {
+    width: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-icons {
+    width: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-icons {
+    width: 150px;
+    margin-bottom: 50px;
+  }
+}
+
+.icons-about-group {
+  margin: 30px;
 }
 
 /* Seccion 2 */
@@ -476,13 +523,6 @@ body {
   }
 }
 
-@media (min-width: 1400px) {
-  .seccion_2_about {
-    width: 100% !important;
-    height: 100% !important;
-  }
-}
-
 .text_vmc {
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -492,7 +532,7 @@ body {
 .text_mivico {
   color: white;
   font-family: "Open Sans", sans-serif;
-  width: auto;
+  width: 90%;
 }
 
 @media (min-width: 575.98px) {
@@ -504,8 +544,46 @@ body {
 .title_mivico {
   color: #f4d178;
   font-family: "Averta";
-  font-size: 60px;
+  font-size: 40px;
   margin-top: 50px;
+}
+
+@media (min-width: 575.98px) {
+  .title_mivico {
+    font-size: 50px !important;
+  }
+}
+
+@media (min-width: 720px) {
+  .title_mivico {
+    font-size: 70px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .title_mivico {
+    font-size: 80px !important;
+    text-align: left;
+  }
+}
+
+.values-list {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+@media (min-width: 576px) {
+  .values-list {
+    margin-left: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .values-list {
+    margin-left: 0px !important;
+  }
 }
 
 /* Seccion 3 */
@@ -544,6 +622,18 @@ body {
   }
 }
 
+@media (min-width: 720px) {
+  .text_aboutus {
+    width: 650px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .text_aboutus {
+    width: 900px !important;
+  }
+}
+
 .videos-banderas {
   display: flex;
   flex-flow: column;
@@ -554,6 +644,72 @@ body {
 }
 
 /* Team */
+
+.principal-team {
+  background-color: black;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.principal-team h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.text-principal-team {
+  font-family: "Averta";
+  font-size: 20px;
+  padding: 80px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .text-principal-team {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .text-principal-team {
+    font-size: 50px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-principal-team {
+    font-size: 80px !important;
+  }
+}
+
+.our-people {
+  font-family: "Averta";
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.text-our-people {
+  font-size: 50px;
+}
+
+@media (min-width: 768px) {
+  .text-our-people {
+    font-size: 60px !important;
+  }
+}
 
 .img-profile {
   width: 280px;
@@ -827,4 +983,17 @@ footer {
 
 .footer-text {
   text-align: center;
+}
+
+.footer-icons {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.direction {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
 }
