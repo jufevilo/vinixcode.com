@@ -354,6 +354,13 @@ h2 {
   width: 200px;
   height: auto;
   margin: 10px;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+.text-one:hover {
+  transform: rotate(4deg);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -376,8 +383,15 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-flow: wrap;
+  flex-flow: wrap-reverse;
   align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .seccion-2 {
+    display: flex;
+    flex-flow: wrap;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -400,6 +414,13 @@ h2 {
   margin: 80px;
 }
 
+@media (max-width: 992px) {
+  .img-service {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
 @media (min-width: 768px) {
   .img-service {
     width: 600px !important;
@@ -417,6 +438,12 @@ h2 {
   font-family: "Averta";
   font-size: 40px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .title-services {
+    margin-top: 150px !important;
+  }
 }
 
 @media (min-width: 575.98px) {
@@ -454,6 +481,7 @@ h2 {
 @media (max-width: 991.98px) {
   .video-services {
     width: 100% !important;
+    margin-bottom: 40px;
   }
 }
 
@@ -541,16 +569,18 @@ h2 {
   padding: 20px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .vinix-carousel {
-    width: 100% !important;
+    width: 95% !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
-@media (max-width: 1400px) {
+
+@media (min-width: 1200px) {
   .vinix-carousel {
-    width: 75% !important;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    width: 700px !important;
+    padding-bottom: 80px;
   }
 }
 
@@ -1012,7 +1042,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
-  flex-address: column;
+  flex-direction: column;
 }
 
 .image-profile {
