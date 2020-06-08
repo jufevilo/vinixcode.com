@@ -43,7 +43,7 @@ sr.reveal(".we-are-experts-title", {
 
 sr.reveal(".we-are-experts", {
   duration: 1000,
-  origin: "right",
+  origin: "top",
   distance: "300px",
 });
 
