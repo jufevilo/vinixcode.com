@@ -137,24 +137,6 @@ sr.reveal(".text-profile", {
   distance: "300px",
 });
 
-sr.reveal(".title-contact", {
-  duration: 1000,
-  origin: "top",
-  distance: "300px",
-});
-
-sr.reveal(".text-contact", {
-  duration: 1000,
-  origin: "bottom",
-  distance: "300px",
-});
-
-sr.reveal(".vinix-form", {
-  duration: 1000,
-  origin: "left",
-  distance: "300px",
-});
-
 sr.reveal(".services-text", {
   duration: 1000,
   origin: "left",
