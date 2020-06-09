@@ -109,6 +109,54 @@ h2 {
   padding: 10px;
 }
 
+.idioms-two {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  width: 7.14286%;
+  padding-right: 16px;
+  z-index: 100;
+}
+
+@media (max-width: 1200px) {
+  .idioms-two {
+    display: none;
+  }
+}
+
+.translate-one {
+  width: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: wrap;
+}
+
+@media (min-width: 374px) {
+  .translate-one {
+    width: 0px;
+  }
+}
+
+.img-idioms-one {
+  width: 40px;
+}
+
+.translate {
+  width: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.img-idioms {
+  width: 35px;
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+
+.img-idioms:hover {
+  transform: scale(1.4, 1.4);
+}
 /* Menú Principal */
 
 @media (min-width: 1199.98px) {
@@ -270,22 +318,6 @@ h2 {
   transform-origin: right;
 }
 
-/* .navbar-collapse.collapsing {
-  height: 100%;
-  -webkit-transition: left 0.2s ease-in;
-  -o-transition: left 0.2s ease-in;
-  -moz-transition: left 0.2s ease-in;
-  transition: left 0.2s ease-in;
-  left: -200%;
-}
-
-.navbar-collapse.show {
-  transition: left 0.5s;
-  transition-timing-function: left ease;
-} */
-
-/* Sección 1 */
-
 .principal-index {
   background-color: black;
   position: relative;
@@ -404,7 +436,188 @@ h2 {
 @media (min-width: 1400px) {
   .seccion-2 {
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
+  }
+}
+
+.seccion-2-services {
+  background-color: black;
+  color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  align-items: flex-start;
+}
+
+@media (min-width: 1200px) {
+  .seccion-2-services {
+    display: flex;
+    flex-flow: wrap;
+  }
+}
+
+@media (max-width: 1400px) {
+  .seccion-2-services {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .seccion-2-services {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.container-service-3-4 {
+  background: rgb(235, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(235, 0, 0, 1) 0%,
+    rgba(128, 0, 0, 1) 100%
+  );
+}
+
+.seccion-3-services {
+  color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .seccion-3-services {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .seccion-3-services {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.title-services-text-3-container {
+  width: auto;
+}
+
+@media (min-width: 1200px) {
+  .title-services-text-3-container {
+    width: 70% !important;
+  }
+}
+
+.title-services-text {
+  color: #f4d178 !important;
+  font-family: "Averta";
+}
+
+.title-services-text-3 {
+  color: #f4d178 !important;
+  font-family: "Averta";
+  font-size: 40px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .title-services-text-3 {
+    font-size: 60px;
+  }
+}
+
+.services-text {
+  padding: 20px;
+  width: 350px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .services-text {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .services-text {
+    width: 300px;
+  }
+}
+
+.list-services-3 {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  flex-flow: wrap;
+}
+
+.list-alone {
+  margin: 0px;
+}
+
+.how-description {
+  font-family: "Open Sans", sans-serif;
+  width: 90%;
+}
+
+.seccion-title-how {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title-how {
+  color: #f4d178;
+  font-size: 60px;
+  padding-top: 40px;
+}
+
+.all-text-services-4 {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.seccion-4-services {
+  color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .seccion-4-services {
+    display: flex;
+  }
+}
+
+@media (max-width: 1400px) {
+  .seccion-4-services {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .seccion-4-services {
+    width: 100% !important;
+    height: auto !important;
   }
 }
 
