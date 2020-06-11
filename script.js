@@ -41,8 +41,8 @@ sr.reveal(".we-are-experts-title", {
   distance: "300px",
 });
 
-sr.reveal(".we-are-experts", {
-  duration: 1000,
+sr.reveal(".about-icons", {
+  duration: 500,
   origin: "top",
   distance: "300px",
 });
@@ -55,7 +55,7 @@ sr.reveal(".video-mission", {
 
 sr.reveal(".all-text", {
   duration: 1000,
-  origin: "right",
+  origin: "left",
   distance: "300px",
 });
 
