@@ -154,3 +154,15 @@ sr.reveal(".title-services-text-3", {
   origin: "top",
   distance: "300px",
 });
+
+// Language
+
+// window.onload = function () {
+//   var ln = navigator.language || navigator.userLanguage;
+//   let pagActual = window.location.pathname;
+//   if (ln == "en-EN" && !pagActual.includes(window.englishUrl)) {
+//     window.location.href = window.englishUrl;
+//   } else if (ln == "es-ES" && !pagActual.includes(window.spanishUrl)) {
+//     window.location.href = window.spanishUrl;
+//   }
+// };
