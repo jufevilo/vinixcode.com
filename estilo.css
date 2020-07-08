@@ -1157,6 +1157,7 @@ h2 {
 @media (min-width: 768px) {
   .text-our-people {
     font-size: 60px !important;
+    margin-bottom: 100px;
   }
 }
 
@@ -1167,14 +1168,16 @@ h2 {
 
 @media (min-width: 992px) {
   .img-profile {
-    width: 200px;
+    width: 300px;
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 
 @media (min-width: 1400px) {
   .img-profile {
-    width: 300px;
-    margin-top: 200px !important;
+    width: 450px;
+    /* margin-top: 200px !important; */
   }
 }
 .names-profiles {
@@ -1238,13 +1241,6 @@ h2 {
   .section-1-team {
     width: 100% !important;
     height: auto !important;
-  }
-}
-
-@media (min-width: 1400px) {
-  .section-1-team {
-    width: 100% !important;
-    height: 100% !important;
   }
 }
 
@@ -1381,105 +1377,6 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-/* contact */
-
-.vinix-form {
-  width: 300px;
-}
-
-@media (min-width: 575.98px) {
-  .vinix-form {
-    width: 600px !important;
-  }
-}
-
-.vinix-form input {
-  background-color: transparent;
-  border-color: white;
-  border-radius: 10px;
-  border-width: 2px;
-}
-
-.vinix-form textarea {
-  background-color: transparent;
-  border-color: white;
-  border-radius: 10px;
-  border-width: 2px;
-}
-
-.vinix-form button {
-  background-color: transparent;
-  border-color: white;
-  border-radius: 10px;
-  border-width: 2px;
-  color: white;
-}
-
-.vinix-form ::placeholder {
-  color: white;
-}
-
-.page-contact {
-  background: rgb(235, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(235, 0, 0, 1) 0%,
-    rgba(128, 0, 0, 1) 100%
-  );
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (min-width: 1400px) {
-  .page-contact {
-    height: 100% !important;
-  }
-}
-
-.section-contact {
-  display: flex;
-  align-items: center;
-  flex-flow: column;
-  justify-content: center;
-}
-
-.title-contact {
-  color: white;
-  font-family: "Averta";
-  font-size: 40px;
-  display: flex;
-}
-
-@media (min-width: 575.98px) {
-  .title-contact {
-    font-size: 80px !important;
-  }
-}
-
-.text-contact {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  padding: 10px;
-}
-
-@media (min-width: 575.98px) {
-  .text-contact {
-    width: 500px !important;
-  }
-}
-
-textarea[type]:focus,
-input[type]:focus {
-  border-color: transparent;
-  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
-    0 0 8px rgba(85, 65, 40, 0.6);
-  outline: 0 none;
 }
 
 /* footer */
